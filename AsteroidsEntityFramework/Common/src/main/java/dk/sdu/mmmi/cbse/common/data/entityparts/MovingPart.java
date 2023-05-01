@@ -32,7 +32,10 @@ public class MovingPart
         this.maxSpeed = maxSpeed;
         this.rotationSpeed = rotationSpeed;
     }
-
+    public void setSpeed(float speed) {
+        this.acceleration = speed;
+        this.maxSpeed = speed;
+    }
     public void setDeceleration(float deceleration) {
         this.deceleration = deceleration;
     }
