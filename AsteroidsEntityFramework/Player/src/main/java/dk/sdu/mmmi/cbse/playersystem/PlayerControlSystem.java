@@ -41,8 +41,13 @@ public class PlayerControlSystem implements IEntityProcessingService {
             movingPart.setUp(gameData.getKeys().isDown(UP));
 
             if (gameData.getKeys().isDown(GameKeys.SPACE)) {
-                BulletSPI bullet = new BulletControlSystem();
-                world.addEntity(bullet.createBullet(player,gameData));
+                // update to call serviceloader instead
+                for (BulletSPI bullet : SPILocator.locateAll(BulletSPI.class)) {
+                    world.addEntity(bullet.createBullet(player, gameData));
+                }
+                // old way
+//                BulletSPI bullet = new BulletControlSystem();
+//                world.addEntity(bullet.createBullet(player,gameData));
             }
 
             movingPart.process(gameData, player);

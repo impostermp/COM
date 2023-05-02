@@ -35,6 +35,7 @@ public class SPILocator {
 
         if (printStatement) {
             System.out.println("Found " + list.size() + " implementations for interface: " + service.getName());
+
         }
 
         return list;
