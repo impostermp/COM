@@ -1,7 +1,7 @@
 package dk.sdu.mmmi.cbse.playersystem;
 
 
-import dk.sdu.mmmi.cbse.bulletsystem.BulletControlSystem;
+
 import dk.sdu.mmmi.cbse.common.bullet.BulletSPI;
 import dk.sdu.mmmi.cbse.common.data.Entity;
 import dk.sdu.mmmi.cbse.common.data.GameData;
@@ -18,9 +18,7 @@ import dk.sdu.mmmi.cbse.common.services.IEntityProcessingService;
 import dk.sdu.mmmi.cbse.common.util.SPILocator;
 
 
-import static java.lang.Math.cos;
-import static java.lang.Math.sin;
-import static java.lang.Math.sqrt;
+
 
 /**
  *
